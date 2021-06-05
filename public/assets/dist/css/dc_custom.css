@@ -1,0 +1,65 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-bottom: 20px;
+}
+.logoutImg {
+	margin-top: 0px ! important;
+}
+.logoutRightAlign {
+	float: right;
+}
+.select2-container--default .select2-selection--single {
+	height: 37px ! important;
+}
+.imgStyle{
+    height: 30px;
+    width: 30px;
+    /* margin-top: 20px; */
+} 
+.add_button {
+        position: absolute;
+        top: 8px;
+        right: -30px !important;
+}
+.custom-style {
+    padding-top: 0px;
+    padding-left: 0px;
+}
+button.btn.btn-info.float-right {
+    margin-left: 10px;
+}
+.deletePointer {
+	/*top: 14px;*/
+  	position: absolute;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	background-color: #555;
+  	color: white;
+  	font-size: 14px;
+  	border: none;
+  	cursor: pointer;
+  	border-radius: 100%;
+  	text-align: center;
+  	padding: 5px 5px 3px 7px;
+}
+.timeline-body {
+	padding-top: 20px;
+}
+.deletePointer:hover {
+  background-color: black;
+}
+.iPointer {
+    padding: 3px 1px 0px 3px ! important;
+}
+#loading {
+    background: rgba(26, 20, 23, 0.6) url(/assets/dist/img/preloader.gif) no-repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
