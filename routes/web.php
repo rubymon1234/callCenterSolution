@@ -38,7 +38,15 @@ Route::group(['middleware' => 'auth','prefix' =>'admin'], function () {
 	Route::get('/permission/edit/{id}','Acl\AclController@getEditPerms')->name('acl.perms.edit');
 	Route::post('/permission/edit/{id}','Acl\AclController@postEditPerms')->name('acl.perms.edit');
 	Route::get('/permission/del/{id}','Acl\AclController@getDelPerms')->name('acl.perms.delete');
+
+	//Manage DID
+	Route::get('/did/listing', 'Web\DiDController@getDiDListing')->name('web.did.listing')->middleware(['permission:web.did.listing']);
+	Route::post('/did/app-value', 'Web\AjaxController@postAppvalue')->name('web.did.appvalue.ajax')->middleware(['permission:web.did.listing']);
+	Route::post('/did/manage', 'Web\DiDController@postManageDiD')->name('web.did.manage')->middleware(['permission:web.did.listing']);
+
 	// Errors
 	Route::get('/permission/denid/403', 'Web\HomeController@accessDenied')->name('accessDenied');
 });
+
+
 

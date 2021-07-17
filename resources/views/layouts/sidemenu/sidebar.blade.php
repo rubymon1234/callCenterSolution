@@ -35,6 +35,14 @@
                 </ul>
             </li>
             @endpermission
+            @permission(('web.did.*'))
+            <li class="nav-item">
+                <a href="{{ route('web.did.listing') }}" class="nav-link {{ (Route::is('web.did.listing') ? 'active' : '') }}">
+                    <i class="nav-icon fas fa-phone"></i>
+                    <p> Manage DID </p>
+                </a>
+            </li>
+            @endpermission
         </ul>
     </nav>
 </div>
